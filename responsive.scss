@@ -1,0 +1,54 @@
+
+@media only screen and (min-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1440px) { // Laptop L
+	
+}
+@media only screen and (max-width: 1024px) { // Laptop
+	
+}
+@media only screen and (max-width: 992px) {
+		#block-block-1{
+		figure.logo{
+			a{
+				display: block!Important;
+				text-align: center!Important;
+				img{
+					
+				}
+			}
+		}
+	}
+	.view-salud-humana{
+		.view-content{
+			.views-row{
+				.views-field-title{
+					span{
+						a{
+							font-size: 1.1em!Important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	
+}
+@media only screen and (max-width: 480px){
+	.view-salud-humana{
+		.view-content{
+			.views-row{
+				width: 100%!Important;
+			}
+		}
+	}
+
+}
+@media only screen and (max-width: 320px){
+
+}

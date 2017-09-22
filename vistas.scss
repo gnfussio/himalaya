@@ -1,0 +1,47 @@
+@import "compass/css3";
+@import "mixins.scss";
+
+
+// salud humana
+
+.view-salud-humana{
+	.view-content{
+			@include flexo2;
+			@include flex-wrap(wrap);
+		.views-row{
+			width: 31%;
+			text-align: center;
+			margin: 0 8px 20px 8px;
+			.views-field-field-imagen-producto{
+				a{
+					img{
+						@include wyh;
+					}
+				}
+			}
+			.views-field-title{
+				a{
+					font-weight: bolder;
+					color: $gris;
+					text-decoration: none;
+					font-size: 2em;
+				}
+			}
+			.views-field-field-presentacion-breve{
+				color: $gris;
+				text-transform: uppercase;
+				border-bottom: $turquesamenu solid 2px;
+				font-size: 0.8em;
+				display: inline-block;
+			    padding: 5px;
+			    margin: 10px;
+			}
+			.views-field-field-descripcion-corta{
+				font-size: 0.75em;
+			}
+			.views-field-field-categoria{
+				font-size: 0.7em;	
+			}
+		}
+	}
+}
