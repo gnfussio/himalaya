@@ -48,3 +48,59 @@
 		}
 	}
 }
+
+
+//  *************  página de Eventos
+
+.page-node-115{
+	.page-title{
+		display: none;
+	}
+}
+
+.view-eventos, .view-eventos-nicaragua {
+	.views-row{
+		padding: 16px 0px 16px 0px;
+		border-bottom: 1px $grisClaro solid;
+		@include flexo2;
+		@include justify-content(space-around);
+			@each $feventos in fecha, pais, direcci-n, lugar, telefono {
+				.views-field-field-#{$feventos} {
+					font-size: 0.85em;
+			}
+		}
+		.views-field-title, .views-field-field-pais{
+			display: none;
+		}
+	}
+
+	.views-field-field-fecha{
+		width: 20%;
+		color: $turquesa;
+		font-weight: bolder;
+		font-weight: 700;
+	}
+	.views-field-field-direcci-n{
+		width: 40%;
+	}
+	.views-field-field-lugar{
+		width: 25%;
+	}
+	.views-field-field-telefono{
+		width: 15%;
+		font-weight: bolder;
+		font-weight: 700;
+	}
+}
+.views-field-field-fecha{
+	@include cualpais;  // detecta a cual pais pertenece y le pone el color correspondiente
+}
+
+
+
+
+
+
+
+
+

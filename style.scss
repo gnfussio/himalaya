@@ -30,6 +30,11 @@ h5 { font-size: 18px }
 h6 { font-size: 16px }
 h1.page-title { font-size: 32px; }
 
+strong, * strong{
+	font-weight: bolder;
+	font-weight: 700;
+}
+
 #breadcrumb{
 	display:none;
 }
@@ -999,6 +1004,12 @@ section.menuFiltroVista{
 		}
 	}
 }
+
+
+// Página de contáctenos
+
+
+
 
 
 

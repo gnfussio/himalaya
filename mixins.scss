@@ -57,3 +57,24 @@ $tipo: 'Roboto', sans-serif;
 	width: 100%;
 	height: auto;
 }
+
+
+@mixin cualpais {
+  @if & {
+    #block-views-eventos-block & {
+      color: $turquesa;
+    }
+  }
+  @if & {
+    #block-views-eventos-nicaragua-block & {
+      color: $naranja;
+    }
+  }
+   @else {
+    #noexiste {
+    color: red;
+    }
+  }
+}
+
+
