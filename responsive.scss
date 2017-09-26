@@ -20,7 +20,10 @@
 			}
 		}
 	}
-	.view-salud-humana{
+	.view-salud-humana, 
+	.view-cuidado-bebe, 
+	.view-cuidado-personal, 
+	.view-salud-animal{
 		.view-content{
 			.views-row{
 				.views-field-title{
@@ -36,11 +39,28 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.page-node-84{
+		#main-content{
+			.container{
+				.row{
+					> aside, > section{
+						width: 100%!important;
+					}
+					> aside{
+						margin-right: 0%!important; 
+					}
+				}
+			}
+		}
+	}
 
 	
 }
 @media only screen and (max-width: 480px){
-	.view-salud-humana{
+	.view-salud-humana, 
+	.view-cuidado-bebe, 
+	.view-cuidado-personal, 
+	.view-salud-animal{
 		.view-content{
 			.views-row{
 				width: 100%!Important;

@@ -99,7 +99,7 @@ h1.page-title { font-size: 32px; }
 			display: block;
 			img{
 				@include wyh;
-				max-width: 280px;
+				max-width: 230px;
 			}
 		}
 	}
@@ -134,12 +134,15 @@ section#menuPrincipal{
 	article{
 		position: relative;
 		> .item{
-			color: $turquesa;
 			text-transform: uppercase;
 			cursor: pointer;
-			font-size: 0.7em;
+			font-size: 0.8em;
 		    border-left: solid 1px #999;
 		    padding: 10px;
+		    margin-top: 35px;
+		    a{
+		    	color: $turquesa;
+		    }
 		}
 		// **** submenus del menú principal
 		.subMenuBox{
@@ -156,6 +159,7 @@ section#menuPrincipal{
 					.menuCols{
 						margin: 8px 12px 8px 8px;
 						min-width: 180px;
+						line-height: 1.5em;
 						ul{
 							margin-bottom: 14px;
 							li{
@@ -166,7 +170,9 @@ section#menuPrincipal{
 									font-size: 0.9em;
 								}
 								a{
-									font-size: 0.7em;
+									font-size: 0.8em;
+									text-transform: capitalize;
+									color: $blanco;
 								}
 							}
 						}
@@ -346,6 +352,12 @@ section#menuPrincipal{
 	}
 }
 
+.front{
+	.page-title{
+		display: none;
+	}
+}
+
 // ******************  Page
 
 #page{
@@ -355,6 +367,7 @@ section#menuPrincipal{
 // .............  seccion categorías en front pages
 
 section.wrapperCatgFrontPage{
+	margin-top: 30px;
 	@include flexo2;
 	@include flex-wrap(wrap);
 	@include justify-content(space-between);
@@ -387,7 +400,11 @@ section.wrapperCatgFrontPage{
 			@include flex-wrap(wrap);
 			@include transicion(300ms);
 			.texto{
-
+				width: 100%;
+				strong{
+					display: block;
+					margin-bottom: 18px;
+				}
 			}
 			strong, span{
 				text-transform: uppercase;
@@ -549,13 +566,13 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_beneficios.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
 		    content: "";
-		    left: 2px;
-		    top: 2px;
+		    left: 10px;
+		    top: 3px;
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
@@ -568,6 +585,36 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
+
+	.field-name-field-modo_de_uso{
+		.field-label{
+			cursor: pointer;
+		}
+		.field-items{
+			display: none;
+		}
+		.field-label:before{
+			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_modo_uso.png");
+		    width: 30px;
+		    height: 35px;
+		    position: absolute;
+		    z-index: 2;
+		    content: "";
+		    left: 10px;
+		    top: 3px;
+		    background-size: 85%;
+    		background-repeat: no-repeat;
+		}
+		.field-item{	
+			h2{
+				color: $turquesa;
+				p{
+					
+				}
+			}
+		}
+	}
+
 	.field-name-field-ingredientes{
 		table{
 			font-style: italic;
@@ -587,13 +634,13 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
 		    content: "";
-		    left: 2px;
-		    top: 2px;
+		    left: 10px;
+		    top: 3px;
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
@@ -607,13 +654,13 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_info.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
 		    content: "";
-		    left: 2px;
-		    top: 2px;
+		    left: 10px;
+		    top: 3px;
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
@@ -688,13 +735,13 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_acciones.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
 		    content: "";
-		    left: 2px;
-		    top: 2px;
+		    left: 10px;
+		    top: 3px;
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
@@ -708,13 +755,13 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_dosis.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
 		    content: "";
-		    left: 2px;
-		    top: 2px;
+		    left: 10px;
+		    top: 3px;
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
@@ -771,6 +818,7 @@ section.wrapperCatgFrontPage{
 #footer{
 	background: $turquesa;
 	padding: 30px 0;
+	text-align: center;
 	#block-block-5, #block-block-4{
 		p{
 			color: $blanco;
@@ -878,7 +926,79 @@ section.menuFiltroVista{
 }
 
 
+// Página de contáctenos
 
+.page-node-84{
+	.page-title{
+		display: none;
+	}
+	#main-content{
+		.container{
+			.row{
+				@include flexo2;
+				@include flex-wrap(wrap);
+				> aside, > section{
+					width: 47%;
+				}
+				> aside{
+					margin-right: 5%; 
+				}
+				section{
+					.form-actions{
+						text-align: center;
+						input.webform-submit{
+							background: #005d62;
+						    border: none;
+						    color: white;
+						    padding: 12px 20px;
+						    @include transicion(300ms);
+						    &:hover{
+						    	background: $naranja;
+						    }
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+#block-block-14{
+	.info{
+		font-size: 14px;
+		line-height: 20px;
+		margin: 18px 0;
+		.titulo{
+			text-transform: uppercase;
+			color: $blanco;
+			padding: 8px;
+			font-size: 1.1em;
+			margin-bottom: 18px;
+		}
+		strong{
+			font-weight: bold;
+			font-weight: 700;
+		}
+	}
+	.content{
+		div:nth-of-type(1){
+			.titulo{
+				background: $turquesa;
+			}
+		}
+		div:nth-of-type(3){
+			.titulo{
+				background: $naranja;
+			}
+		}		
+	}
+
+	.mapa{
+		iframe{
+			width: 100%!important;
+		}
+	}
+}
 
 
 

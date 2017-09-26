@@ -4,7 +4,10 @@
 
 // salud humana
 
-.view-salud-humana{
+.view-salud-humana, 
+.view-cuidado-bebe, 
+.view-cuidado-personal, 
+.view-salud-animal {
 	.view-content{
 			@include flexo2;
 			@include flex-wrap(wrap);
