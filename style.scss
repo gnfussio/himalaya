@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700; 
 	line-height: 120%; 
 	padding: 0; 
-	margin: 20px 0 10px 0; 
+	margin: 40px 0 10px 0; 
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #444; }
@@ -96,8 +96,18 @@ strong, * strong{
 	}
 }
 
+#header-top{
+	background-color: #f9f9f9;
+	border-top: solid 1px #aeaeae;
+}
+
 #header-top-inside{
 	    margin-bottom: 15px;
+	    margin-top: 15px;
+}
+
+
+.region.region-banner { margin-bottom: 25px;
 }
 
 // =-=-=-=-=-=-=-  Logo
@@ -437,7 +447,7 @@ section.wrapperCatgFrontPage{
 				width: 100%;
 				strong{
 					display: block;
-					margin-bottom: 18px;
+					margin-top: 50px;
 				}
 			}
 			strong, span{
@@ -450,11 +460,13 @@ section.wrapperCatgFrontPage{
 			strong{
 				font-weight: bolder;
 				font-weight: 700;
-				font-size: 0.7em;
+				font-size: 1.1em;
+				line-height: 1.2em;
 			}
 			span{
 				font-weight: 300;
-				font-size: 0.8em;
+				font-size: 1.5em;
+				line-height: 1.2em;
 			}
 			.boton{
 				display: block;
@@ -568,9 +580,9 @@ section.wrapperCatgFrontPage{
 		text-transform: uppercase;
 		text-align: center;
 		color: $gris;
-		padding: 12px 0;
+		padding: 5px 0 10px 0;
 		letter-separation: 1px;
-		border-bottom: solid 1px $naranja;
+		border-bottom: solid 1px $turquesa;
 	}
 	.field-name-field-descripcion-corta{
 		padding: 12px 0;
@@ -599,9 +611,9 @@ section.wrapperCatgFrontPage{
 		}
 		.field-items{
 			display: none;
-			border-right: solid 1px $grisOscuro;
-			border-left: solid 1px $grisOscuro;
-			border-bottom: solid 1px $grisOscuro;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
@@ -618,7 +630,7 @@ section.wrapperCatgFrontPage{
 		}
 		.field-item{	
 			h2{
-				color: $turquesa;
+				color: $moramenu;
 				p{
 					
 				}
@@ -632,6 +644,10 @@ section.wrapperCatgFrontPage{
 		}
 		.field-items{
 			display: none;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_modo_uso.png");
@@ -665,7 +681,11 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 		}
 		.field-items{
-			display: block;
+			display: none;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-item{
 			img{
@@ -692,9 +712,9 @@ section.wrapperCatgFrontPage{
 		}
 		.field-items{
 			display: none;
-			border-right: solid 1px $grisOscuro;
-			border-left: solid 1px $grisOscuro;
-			border-bottom: solid 1px $grisOscuro;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
@@ -730,16 +750,22 @@ section.wrapperCatgFrontPage{
 			color: $negro;
 		}
 	}
+
 	.field-name-field-modo-uso{
 		.field-label{
 			cursor: pointer;
 		}
+
 		.field-items{
 			display: none;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_modo_uso.png");
-		    width: 38px;
+		    width: 30px;
 		    height: 35px;
 		    position: absolute;
 		    z-index: 2;
@@ -767,11 +793,26 @@ section.wrapperCatgFrontPage{
 	}
 	.field-name-field-imagen-ingredientes{
 		.field-label{
-			display: none;
+			
+		}
+	
+		.field-label:before{
+			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
+		    width: 30px;
+		    height: 35px;
+		    position: absolute;
+		    z-index: 2;
+		    content: "";
+		    left: 2px;
+		    top: 2px;
+		    background-size: 85%;
+    		background-repeat: no-repeat;
 		}
 		.field-item {
 			img{
-				@include wyh;
+				    width: 80%;
+    				text-align: center;
+    				height: auto;
 			}
 		}
 	}
@@ -782,9 +823,9 @@ section.wrapperCatgFrontPage{
 		}
 		.field-items{
 			display: none;
-			border-right: solid 1px $grisOscuro;
-			border-left: solid 1px $grisOscuro;
-			border-bottom: solid 1px $grisOscuro;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
@@ -807,9 +848,9 @@ section.wrapperCatgFrontPage{
 		}
 		.field-items{
 			display: none;
-			border-right: solid 1px $grisOscuro;
-			border-left: solid 1px $grisOscuro;
-			border-bottom: solid 1px $grisOscuro;
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label{
@@ -912,6 +953,7 @@ section.wrapperCatgFrontPage{
 
 section.menuFiltroVista{
 	margin-top: 30px;
+	line-height: 25px;
 	ul.nivelUno{
 		> li{
 			border-bottom: solid 1px $turquesa;
@@ -962,6 +1004,22 @@ section.menuFiltroVista{
 		display: none;
 	}
 }
+.page-salud-animal{
+	.page-title{
+		display: none;
+	}
+}
+
+.page-cuidado-bebe{
+	.page-title{
+		display: none;
+	}
+}
+.page-cuidado-personal{
+	.page-title{
+		display: none;
+	}
+}
 
 // ************  Preguntas Freuentes
 
@@ -979,6 +1037,9 @@ section.menuFiltroVista{
 			text-transform: uppercase;
 			color: $gris;
 			cursor: pointer;
+			line-height: 20px;
+    		font-size: 0.9em;
+}
 			&:hover{
 				color: lighten($turquesa, 10%);
 			}
@@ -995,17 +1056,23 @@ section.menuFiltroVista{
 
 	h2:nth-of-type(1){
 		color: $turquesa;
+		text-transform: uppercase;
 	}
 	h2:nth-of-type(2){
 		color: $naranja;
+		text-transform: uppercase;
 	}
 	h2:nth-of-type(3){
 		color: $verdemenu;
+		text-transform: uppercase;
+		
 	}
 	h2:nth-of-type(4){
 		color: $moramenu;
+		text-transform: uppercase;
+		
 	}
-}
+
 
 
 // Página de contáctenos
