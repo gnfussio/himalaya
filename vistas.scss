@@ -69,7 +69,9 @@
 					font-size: 0.85em;
 			}
 		}
-		.views-field-title, .views-field-field-pais{
+		.views-field-title, 
+		.views-field-field-pais, 
+		.views-field-field-provincias-cr {
 			display: none;
 		}
 	}
@@ -94,6 +96,36 @@
 }
 .views-field-field-fecha{
 	@include cualpais;  // detecta a cual pais pertenece y le pone el color correspondiente
+}
+
+//  Block eventos provincias de Costa Rica y municipios de Nicaragua
+#block-block-15 {
+	color: $turquesa;
+}
+#block-block-16 {
+	color: $naranja;
+}
+#block-block-15, #block-block-16{
+	margin: 20px 0;
+	.content{
+		text-align: center;
+		text-transform: uppercase;
+		h2{
+			font-weight: 300;
+			font-weight: lighter;
+		}
+	}
+	.wrapProvinciasEventos{
+		@include flexo3;
+		@include flex-wrap(wrap);
+		.provincia{
+			cursor: pointer;
+			padding: 12px;
+			&:hover{
+				border-bottom: 2px solid $turquesa;
+			}
+		}
+	}
 }
 
 

@@ -96,6 +96,10 @@ strong, * strong{
 	}
 }
 
+#header-top-inside{
+	    margin-bottom: 15px;
+}
+
 // =-=-=-=-=-=-=-  Logo
 
 #block-block-1{
@@ -168,17 +172,24 @@ section#menuPrincipal{
 						ul{
 							margin-bottom: 14px;
 							li{
+								list-style-type: disc;
+								list-style-position: inside;
+								color: $blanco;
 								h2{
 									font-size: 1em;
 								}
 								h3, a h3{
-									font-size: 0.9em;
+									font-size: 1em;
 								}
 								a{
-									font-size: 0.8em;
+									font-size: 0.9em;
 									text-transform: capitalize;
 									color: $blanco;
 								}
+							}
+							li:nth-child(1){
+								list-style-type: none;
+
 							}
 						}
 					}					
@@ -275,11 +286,28 @@ section#menuPrincipal{
 			display: block;
 		}
 	}
+	// salud animal
 	article:nth-child(4){
 		.subMenuBox{
 			background: $naranja;
 			transform: translateX(-50%);
 			-webkit-transform: translateX(-50%);
+				.wrapColsMenu{
+					.menuCols{
+						&:nth-child(2){
+							border-right: solid 1px $blanco;
+							margin-top: 55px;
+						}
+					}
+				}
+			h2{
+				font-size: 1.2em;
+    			color: white;
+				&:before{
+					content: '►  ';
+					color: $blanco;
+				}
+			}
 		}
 		&:before{
 			position: absolute;
@@ -299,6 +327,7 @@ section#menuPrincipal{
 			display: block;
 		}
 	}
+
 	article:nth-child(5), article:nth-child(6){
 		.subMenuBox{
 			background: $gris;
@@ -493,6 +522,7 @@ section.wrapperCatgFrontPage{
 	ul{
 		li{
 			list-style-type: disc;
+			margin-left: 17px;
 		}
 	}
 		.field-item{
@@ -565,9 +595,14 @@ section.wrapperCatgFrontPage{
 	.field-name-field-beneficios{
 		.field-label{
 			cursor: pointer;
+			margin-bottom: 0px;
 		}
 		.field-items{
 			display: none;
+			border-right: solid 1px $grisOscuro;
+			border-left: solid 1px $grisOscuro;
+			border-bottom: solid 1px $grisOscuro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_beneficios.png");
@@ -651,11 +686,16 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-name-field-informacion-adicional{
-		.field-items{
-			display: none;
-		}
 		.field-label{
 			cursor: pointer;
+			margin-bottom: 0px;
+		}
+		.field-items{
+			display: none;
+			border-right: solid 1px $grisOscuro;
+			border-left: solid 1px $grisOscuro;
+			border-bottom: solid 1px $grisOscuro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_info.png");
@@ -681,6 +721,7 @@ section.wrapperCatgFrontPage{
 			background: $grisClaro;
 			color: $turquesa;
 			margin: 10px;
+			padding: 8px 0;
 		}
 		.field-item{
 			font-weight: lighter;
@@ -711,6 +752,9 @@ section.wrapperCatgFrontPage{
 	}
 
 	.field-name-field-estudios-clinicos{
+		.field-label{
+			display: none;
+		}
 		.field-item{
 			text-align: center;
 			a{
@@ -732,11 +776,16 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-name-field-acciones{
-		.field-items{
-			display: none;
-		}
 		.field-label{
 			cursor: pointer;
+			margin-bottom: 0px;
+		}
+		.field-items{
+			display: none;
+			border-right: solid 1px $grisOscuro;
+			border-left: solid 1px $grisOscuro;
+			border-bottom: solid 1px $grisOscuro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_acciones.png");
@@ -752,8 +801,16 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-name-field-dosis-sugerida{
+		.field-label{
+			cursor: pointer;
+			margin-bottom: 0px;
+		}
 		.field-items{
 			display: none;
+			border-right: solid 1px $grisOscuro;
+			border-left: solid 1px $grisOscuro;
+			border-bottom: solid 1px $grisOscuro;
+			padding: 20px 12px 12px 12px;
 		}
 		.field-label{
 			cursor: pointer;
@@ -856,15 +913,31 @@ section.wrapperCatgFrontPage{
 section.menuFiltroVista{
 	margin-top: 30px;
 	ul.nivelUno{
+		> li{
+			border-bottom: solid 1px $turquesa;
+		}
 		li{
-			margin-bottom: 8px;
+			padding: 7px 0;
 			cursor: pointer;
+			
 			> div{
 				text-transform: uppercase;
 				color: darken($gris, 10%);
+				position: relative;
 				@include transicion(300ms);
 				&:hover{
 					color: $turquesa;
+				}
+				&:after{
+					background-image: url("/himalaya/sites/default/files/flecha_abajo.png");
+					background-repeat: no-repeat;
+					width: 19px;
+					height: 12px;
+					position: absolute;
+					right: 0;
+					content: "";
+    top: 0;
+    content: "";
 				}
 			}
 			ul.nivelDos{
@@ -874,6 +947,10 @@ section.menuFiltroVista{
 					margin-left: 20px;
 					font-size: 12px;
 					color: $gris;
+					a{
+						font-size: 1em;
+						color: $grisOscuro;
+					}
 				}
 			}
 		}
