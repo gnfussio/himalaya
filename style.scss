@@ -177,7 +177,7 @@ section#menuPrincipal{
 					@include align-items(stretch);
 					.menuCols{
 						margin: 8px 12px 8px 8px;
-						min-width: 180px;
+						min-width: 250px;
 						line-height: 1.5em;
 						ul{
 							margin-bottom: 14px;
@@ -514,7 +514,7 @@ section.wrapperCatgFrontPage{
 	article:nth-child(4){
 		.hidenBox{
 			background: rgba($ctg-naranja, 0.8);
-			}
+		}
 	}
 }
 
@@ -524,6 +524,14 @@ section.wrapperCatgFrontPage{
 .node-type-cuidado-del-bebe, 
 .node-type-salud-animal, 
 .node-type-salud-humana{
+	.node{
+		margin-top: 30px;
+	}
+	.col-sm-5{
+		> .field{
+			margin-right: 30px;
+		}
+	}
 	h1.page-title{display:none}
 	.field-label{
 		text-transform: uppercase;
@@ -537,16 +545,13 @@ section.wrapperCatgFrontPage{
 			margin-left: 17px;
 		}
 	}
-		.field-item{
-			ul li, p{
-				color: $grisOscuro;
-				font-size: 0.8em;
-				line-height: 22px;
-			}
+	.field-item{
+		ul li, p{
+			color: $grisOscuro;
+			font-size: 0.95em;
+			line-height: 22px;
 		}
-		.field{
-			margin-bottom: 20px;
-		}
+	}
 
 	.field-name-field-descripcion-corta{
 		.field-label{
@@ -572,6 +577,10 @@ section.wrapperCatgFrontPage{
 		color: $turquesa;
 		font-weight: bolder;
 		text-align: center;
+		h2{
+			margin: 0;
+			padding: 0;
+		}
 	}
 	.field-name-field-presentacion-breve{
 		.field-label{
@@ -590,12 +599,28 @@ section.wrapperCatgFrontPage{
 		color: $naranja;
 		line-height: 25px;
 	}
+	
+	// indicaciones genéricas
+
+	.field-name-field-indicaciones, 
+	.field-name-field-acciones, 
+	.field-name-field-dosis-sugerida, 
+	.field-name-field-informacion-adicional, 
+	.field-name-field-presentacion {
+		margin-bottom: 20px;
+	}
+
+	// Indicaciones por cada field
+
+
 	.field-name-field-indicaciones{
 		.field-label{
 			background: $blanco;
 			color: $turquesa;
+			padding: 8px 0 8px 12px;
 		}
 		.field-item{
+			padding: 20px 12px 12px 12px;
 			ul{
 				li{
 					list-style-type: disc;
@@ -604,10 +629,26 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
+
+
 	.field-name-field-beneficios{
 		.field-label{
 			cursor: pointer;
 			margin-bottom: 0px;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -615,6 +656,12 @@ section.wrapperCatgFrontPage{
 			border-left: solid 1px $grisClaro;
 			border-bottom: solid 1px $grisClaro;
 			padding: 20px 12px 12px 12px;
+
+			h5{
+					color:$naranja;
+					font-size: 1em;
+									
+			}
 		}
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_beneficios.png");
@@ -641,6 +688,20 @@ section.wrapperCatgFrontPage{
 	.field-name-field-modo_de_uso{
 		.field-label{
 			cursor: pointer;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -679,6 +740,21 @@ section.wrapperCatgFrontPage{
 		}
 		.field-label{
 			cursor: pointer;
+			text-align: center;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -709,6 +785,20 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			cursor: pointer;
 			margin-bottom: 0px;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -754,6 +844,20 @@ section.wrapperCatgFrontPage{
 	.field-name-field-modo-uso{
 		.field-label{
 			cursor: pointer;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 
 		.field-items{
@@ -793,6 +897,20 @@ section.wrapperCatgFrontPage{
 	}
 	.field-name-field-imagen-ingredientes{
 		.field-label{
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 			
 		}
 	
@@ -810,16 +928,31 @@ section.wrapperCatgFrontPage{
 		}
 		.field-item {
 			img{
-				    width: 80%;
-    				text-align: center;
-    				height: auto;
+				width: 65%;
+    			height: auto;
+    			display: block;
+    			margin: auto;
 			}
 		}
 	}
-	.field-name-field-acciones{
+	.field-name-field-acciones {
 		.field-label{
 			cursor: pointer;
 			margin-bottom: 0px;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -845,6 +978,20 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			cursor: pointer;
 			margin-bottom: 0px;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
 		}
 		.field-items{
 			display: none;
@@ -990,7 +1137,7 @@ section.menuFiltroVista{
 					font-size: 12px;
 					color: $gris;
 					a{
-						font-size: 1em;
+						font-size: 1.3em;
 						color: $grisOscuro;
 					}
 				}

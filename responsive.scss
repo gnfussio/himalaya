@@ -53,10 +53,59 @@
 			}
 		}
 	}
+	section.wrapperCatgFrontPage{
+		article{
+			width: 48%!important;
+			.hidenBox{
+				.texto{
+					strong, span { font-size: 0.75em!important }
+					} 
+				} 
+			}
+		}
 
+	.view-testimonios {
+		.views-row{
+			.lado-izquierdo, .lado-derecho{
+				width: 100%!important;
+			}
+			.lado-izquierdo{
+				width: 24%;
+				.views-field-field-edad, 
+				.views-field-field-nombre{
+				}
+				.views-field-field-nombre{
+				}
+			}
+			.lado-derecho{
+					
+			}
+		}
+	}
 	
 }
+
 @media only screen and (max-width: 480px){
+
+	.node-type-productos{
+		.col-sm-5{
+			> .field{
+				padding-right: 0px!important;
+			}
+		}
+	}
+
+	section.wrapperCatgFrontPage{
+		article{
+			width: 100%!important;
+			.hidenBox{
+				.texto{
+					strong, span { font-size: 1.2em!important }
+					} 
+				} 
+			}
+		}  
+
 	.view-salud-humana, 
 	.view-cuidado-bebe, 
 	.view-cuidado-personal, 

@@ -1,7 +1,6 @@
 @import "compass/css3";
 @import "mixins.scss";
 
-
 // salud humana
 
 .view-salud-humana, 
@@ -72,7 +71,8 @@
 		}
 		.views-field-title, 
 		.views-field-field-pais, 
-		.views-field-field-provincias-cr {
+		.views-field-field-provincias-cr, 
+		.views-field-field-provincias-nica { 
 			display: none;
 		}
 	}
@@ -84,7 +84,7 @@
 		font-weight: 700;
 	}
 	.views-field-field-direcci-n{
-		width: 40%;
+		width: 45%;
 	}
 	.views-field-field-lugar{
 		width: 25%;
@@ -116,20 +116,95 @@
 			font-weight: lighter;
 		}
 	}
-	.wrapProvinciasEventos{
+	.wrapProvinciasEventos, .wrapEventosNica{
 		@include flexo3;
 		@include flex-wrap(wrap);
 		.provincia{
 			cursor: pointer;
 			padding: 12px;
+			box-sizing: border-box;
+			border-bottom: 2px solid $blanco;
+		}
+	}
+	.wrapProvinciasEventos{
+		.provincia{
 			&:hover{
 				border-bottom: 2px solid $turquesa;
 			}
 		}
+	} 
+	.wrapEventosNica{
+		.provincia{
+			&:hover{
+				border-bottom: 2px solid $naranja;
+			}
+		}
+	}
+}
+#block-views-eventos-block, #block-views-eventos-nicaragua-block{
+	h2{display:none}
+}
+#block-block-16{
+	h2{
+		color: $naranja;
 	}
 }
 
+// testimonios en productos
 
+#anchoTotal-inside{
+	background: $grisClaro;
+	padding: 30px 0;
+}
+#block-views-testimonios-block{
+	> h2{ display: none; }
+}
+
+.view-testimonios {
+	.view-content{
+
+	}
+	.views-row{
+		@include display-flex(flex!Important);
+		@include flex-wrap(wrap);
+		@include align-items(start);
+		@include justify-content(center);
+		.lado-izquierdo{
+			width: 24%;
+			.views-field-field-edad, 
+			.views-field-field-nombre{
+				color: $turquesa;
+				font-size: 1.2em;
+				text-transform: uppercase;
+				margin-bottom: 20px;
+			}
+			.views-field-field-nombre{
+				font-weight: bolder;
+			}
+		}
+		.lado-derecho{
+			width: 70%;
+			padding-left: 20px;
+			border-left: solid 2px $turquesa;
+			h2{
+				padding: 0;
+				margin: 0 0 20px 0;
+			}
+			.views-field-field-testimonio{
+				p{
+					font-size: 14px;
+					line-height: 22px;
+				}
+			}
+			.views-field-field-producto{
+				display: none;
+			}
+		}
+		.views-fieldset{
+			legend{display:none}
+		}
+	}
+}
 
 
 
