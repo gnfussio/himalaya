@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 
 @media only screen and (min-width: 1440px) {
 	
@@ -6,7 +8,24 @@
 	
 }
 @media only screen and (max-width: 1024px) { // Laptop
-	
+
+	section#menuPrincipal{
+	article{
+		// **** submenus del menú principal
+		.subMenuBox{
+				.wrapColsMenu{
+					.menuCols{
+						width: 170px!important;
+					}
+				}
+			}
+		}
+		article:nth-child(1){
+			transform: translateX(-5%)!important;
+    		-webkit-transform: translateX(-5%)!important;
+		}
+	}
+
 }
 @media only screen and (max-width: 992px) {
 		#block-block-1{
@@ -39,6 +58,71 @@
 }
 
 @media only screen and (max-width: 768px) {
+	.node-type-productos, 
+	.node-type-cuidado-del-bebe, 
+	.node-type-salud-animal, 
+	.node-type-salud-humana {
+		.col-sm-5{
+			> .field{
+				margin-right: 0px!important;
+			}
+		}
+	}
+
+	#top-inside{
+		.region-top{
+			padding: 12px 0;
+			#block-search-form{
+				width: 100%!important;
+				.container-inline{
+					width: 100%;
+					@include flexo3;
+					.form-item-search-block-form{
+						width: 75%!important;
+						margin: 20px 0!important;
+						}
+					}
+					.form-item-search-block-form{
+					input{
+						width: 100%!important;
+					}
+				}
+			}
+		}
+	}
+
+	// redes sociales
+	#top-inside{
+		.region-top{
+			#block-block-6{
+				width: 100%!important;
+				margin-top: 20px;
+				}
+			}
+		}
+
+	// logo 	// menu mobil
+	#block-block-27, #block-block-26{
+		display: block!important;
+	}
+
+	#block-block-1{
+		display: none!important;
+	}
+
+	// menu menu desktop
+	#block-block-7{
+		display: none;
+	}
+	#block-block-26{
+		display: block!important;
+		width: 100%;
+		text-align: center;
+		img{
+			margin: 0 auto;
+		}
+	}
+
 	.page-node-84{
 		#main-content{
 			.container{
@@ -58,9 +142,11 @@
 			width: 48%!important;
 			.hidenBox{
 				.texto{
-					strong, span { font-size: 0.75em!important }
-					} 
-				} 
+					strong, span { 
+						font-size: 0.75em!important; 
+						}
+					}
+				}
 			}
 		}
 
@@ -86,6 +172,14 @@
 }
 
 @media only screen and (max-width: 480px){
+	#top{
+		#header-top{
+			.container{
+				margin: 0!important;
+				padding: 0!important;
+			}
+		}
+	}
 
 	.node-type-productos{
 		.col-sm-5{
@@ -97,7 +191,7 @@
 
 	section.wrapperCatgFrontPage{
 		article{
-			width: 100%!important;
+			width: 49.4%!important;
 			.hidenBox{
 				.texto{
 					strong, span { font-size: 1.2em!important }
@@ -118,6 +212,14 @@
 	}
 
 }
-@media only screen and (max-width: 320px){
 
+@media only screen and (max-width: 320px) {
+	
 }
+
+
+
+
+
+
+

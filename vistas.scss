@@ -159,16 +159,29 @@
 #block-views-testimonios-block{
 	> h2{ display: none; }
 }
+.vermasTest, .vermenosTest{
+	background: $turquesa;
+	color: $blanco;
+	&:hover{
+		background: lighter($turquesa, 20%);
+		color: $blanco;
+	}
+}
 
 .view-testimonios {
 	.view-content{
 
 	}
 	.views-row{
-		@include display-flex(flex!Important);
+		height: 0;
+		overflow: hidden;
+		@include display-flex(flex);
 		@include flex-wrap(wrap);
 		@include align-items(start);
 		@include justify-content(center);
+		.lado-izquierdo, .lado-derecho{
+			margin-bottom: 30px;
+		}
 		.lado-izquierdo{
 			width: 24%;
 			.views-field-field-edad, 
