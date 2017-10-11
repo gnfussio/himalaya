@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700; 
 	line-height: 120%; 
 	padding: 0; 
-	margin: 40px 0 10px 0; 
+	margin: 20px 0 10px 0; 
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #444; }
@@ -273,29 +273,6 @@ section#menuPrincipal{
 	//cuidado del bebe
 	article:nth-child(2){
 		.subMenuBox{
-			background: $moramenu;
-		}
-		&:before{
-			position: absolute;
-			display: none;
-			z-index: 6;
-			content: " ";
-			top:-10px;
-			left:calc(50% - 5px);
-			top: calc(100% - 10px);
-			width: 0;
-			height: 0;
-			border-style: solid;
-			border-width: 0 10px 10px 10px;
-			border-color: transparent transparent $moramenu transparent;
-		}
-		&:hover::before{
-			display: block;
-		}
-	}
-	//cuidado personal
-	article:nth-child(3){
-		.subMenuBox{
 			background: $verdemenu;
 		}
 		&:before{
@@ -311,6 +288,29 @@ section#menuPrincipal{
 			border-style: solid;
 			border-width: 0 10px 10px 10px;
 			border-color: transparent transparent $verdemenu transparent;
+		}
+		&:hover::before{
+			display: block;
+		}
+	}
+	//cuidado personal
+	article:nth-child(3){
+		.subMenuBox{
+			background: $moramenu;
+		}
+		&:before{
+			position: absolute;
+			display: none;
+			z-index: 6;
+			content: " ";
+			top:-10px;
+			left:calc(50% - 5px);
+			top: calc(100% - 10px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 10px 10px 10px;
+			border-color: transparent transparent $moramenu transparent;
 		}
 		&:hover::before{
 			display: block;
@@ -564,10 +564,11 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-item{
-		ul li, p{
+		ul li, p, {
 			color: $grisOscuro;
 			font-size: 0.95em;
 			line-height: 22px;
+			text-align: justify;
 		}
 	}
 
@@ -591,7 +592,7 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-name-title{
-		text-transform: uppercase;
+		
 		color: $turquesa;
 		font-weight: bolder;
 		text-align: center;
@@ -642,7 +643,7 @@ section.wrapperCatgFrontPage{
 			padding: 8px 0 8px 12px;
 		}
 		.field-item{
-			padding: 20px 12px 12px 12px;
+			padding: 10px 12px 12px 12px;
 			ul{
 				li{
 					list-style-type: disc;
@@ -652,6 +653,24 @@ section.wrapperCatgFrontPage{
 		}
 	}
 
+	.field-name-field-descripcion-producto {
+		.field-label{
+			display: none;
+		}
+
+		.field-item{
+		ul li, p, {
+			color: $grisOscuro;
+			font-size: 0.95em;
+			line-height: 22px;
+			text-align: justify;
+		}
+	}
+
+
+	}
+
+	
 
 	.field-name-field-beneficios{
 		.field-label{
@@ -738,8 +757,8 @@ section.wrapperCatgFrontPage{
 			border-right: solid 1px $grisClaro;
 			border-left: solid 1px $grisClaro;
 			border-bottom: solid 1px $grisClaro;
-			padding: 20px 12px 12px 12px;
-			max-height: 500px;
+			padding: 10px 12px 12px 12px;
+			max-height: 300px;
 			overflow: auto;
 		}
 		.field-item{
@@ -1382,6 +1401,10 @@ section.menuFiltroVista{
 		p{
 			color: $gris;
 			line-height: 22px;
+			text-align: justify;
+		}
+		li{
+			list-style-type: disc;
 		}
 	}
 }
