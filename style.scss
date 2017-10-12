@@ -629,7 +629,8 @@ section.wrapperCatgFrontPage{
 	.field-name-field-presentacion, 
 	.field-name-field-beneficios, 
 	.field-name-field-imagen-ingredientes, 
-	.field-name-field-ingredientes {
+	.field-name-field-ingredientes,
+	.field-name-field-ingredientes-clave {
 		margin-bottom: 20px;
 	}
 
@@ -919,6 +920,9 @@ section.wrapperCatgFrontPage{
 				background-repeat: no-repeat;
 			}
 		}
+
+
+
 	
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
@@ -939,7 +943,7 @@ section.wrapperCatgFrontPage{
 		}
 		.field-item {
 			img{
-				width: 65%;
+				width: 95%;
     			height: auto;
     			display: block;
     			margin: auto;
@@ -947,6 +951,56 @@ section.wrapperCatgFrontPage{
 		}
 
 	}
+
+
+	.field-name-field-ingredientes-clave{
+		.field-label{
+			margin-bottom: 0px;
+			&:after{
+				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background-repeat: no-repeat;
+				content: "";
+			    width: 19px;
+			    height: 17px;
+			    position: absolute;
+			    z-index: 2;
+			    content: "";
+			    right:10px;
+			    top: 10px;
+			    background-size: 85%;
+				background-repeat: no-repeat;
+			}
+		}
+		
+	
+		.field-label:before{
+			/*background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");*/
+		    width: 30px;
+		    height: 35px;
+		    position: absolute;
+		    z-index: 2;
+		    content: "";
+		    left: 2px;
+		    top: 2px;
+		    background-size: 85%;
+    		background-repeat: no-repeat;
+		}
+		.field-items{
+			border-right: solid 1px $grisClaro;
+			border-left: solid 1px $grisClaro;
+			border-bottom: solid 1px $grisClaro;
+		}
+		.field-item {
+			img{
+				width: 95%;
+    			height: auto;
+    			display: block;
+    			margin: auto;
+			}
+		}
+
+	}
+
 	.field-name-field-acciones {
 		.field-label{
 			cursor: pointer;
@@ -1053,6 +1107,11 @@ section.wrapperCatgFrontPage{
 .node-type-cuidado-del-bebe{
 		h4{
 			color: $moramenu;
+		}
+		.fgdhf{
+			p{
+
+			}
 		}
 	.field-label{
 		background: $moramenu;
@@ -1241,20 +1300,20 @@ section.menuFiltroVista{
 
 	h2:nth-of-type(1){
 		color: $turquesa;
-		text-transform: uppercase;
+		
 	}
 	h2:nth-of-type(2){
 		color: $naranja;
-		text-transform: uppercase;
+		
 	}
 	h2:nth-of-type(3){
 		color: $verdemenu;
-		text-transform: uppercase;
+		
 		
 	}
 	h2:nth-of-type(4){
 		color: $moramenu;
-		text-transform: uppercase;
+		
 		
 	}
 
