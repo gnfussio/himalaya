@@ -35,6 +35,12 @@ strong, * strong{
 	font-weight: 700;
 }
 
+* i, * em{
+	
+	font-style:italic
+}
+
+
 #breadcrumb{
 	display:none;
 }
@@ -1108,11 +1114,7 @@ section.wrapperCatgFrontPage{
 		h4{
 			color: $moramenu;
 		}
-		.fgdhf{
-			p{
-
-			}
-		}
+		
 	.field-label{
 		background: $moramenu;
 		color: $blanco;
@@ -1269,6 +1271,7 @@ section.menuFiltroVista{
 			line-height: 20px;
     		font-size: 0.9em;
     		padding-right: 30px;
+    		text-align: justify;
     			&:hover{
 					color: lighten($turquesa, 10%);
 				}
@@ -1291,6 +1294,7 @@ section.menuFiltroVista{
 		.inresp{
 			padding: 12px;
 			display: none;
+			text-align: justify;
 			p{
 				font-size: 14px;
 			    line-height: 24px;
