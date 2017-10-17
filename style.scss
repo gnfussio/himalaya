@@ -362,7 +362,7 @@ section#menuPrincipal{
 
 	article:nth-child(5){
 		.subMenuBox{
-			background: $gris;
+			background: $grismedio;
 		}
 		&:before{
 			position: absolute;
@@ -376,7 +376,7 @@ section#menuPrincipal{
 			height: 0;
 			border-style: solid;
 			border-width: 0 10px 10px 10px;
-			border-color: transparent transparent $gris transparent;
+			border-color: transparent transparent $grismedio transparent;
 		}
 		&:hover::before{
 			display: block;
@@ -684,8 +684,9 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				
 				background-repeat: no-repeat;
+				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -851,6 +852,7 @@ section.wrapperCatgFrontPage{
 			font-size: 12px;
 			letter-separation: 1px;
 			color: $negro;
+			text-align: center !important;
 		}
 	}
 
@@ -929,8 +931,9 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				
 				background-repeat: no-repeat;
+				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -978,8 +981,9 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				
 				background-repeat: no-repeat;
+				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -994,7 +998,7 @@ section.wrapperCatgFrontPage{
 		}
 		
 		.field-label:before{
-			/*background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");*/
+			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
