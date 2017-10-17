@@ -677,7 +677,7 @@ section.wrapperCatgFrontPage{
 
 	}
 
-	
+	// ============  BENEFICIOS  =============== //
 
 	.field-name-field-beneficios{
 		.field-label{
@@ -733,6 +733,8 @@ section.wrapperCatgFrontPage{
 		}
 	}
 
+	// ============  INGREDIENTES  =============== //
+
 	.field-name-field-ingredientes{
 		table{
 			font-style: italic;
@@ -786,6 +788,9 @@ section.wrapperCatgFrontPage{
     		background-repeat: no-repeat;
 		}
 	}
+
+	// ============  INFORMACION ADICIONAL  =============== //
+
 	.field-name-field-informacion-adicional{
 		.field-label{
 			cursor: pointer;
@@ -825,6 +830,9 @@ section.wrapperCatgFrontPage{
     		background-repeat: no-repeat;
 		}
 	}
+
+	// ============  PRESENTACION  =============== //
+
 	.field-name-field-presentacion{
 		background: $grisClaro;
 		padding: 8px;
@@ -845,6 +853,9 @@ section.wrapperCatgFrontPage{
 			color: $negro;
 		}
 	}
+
+
+	// ============  MODO DE USO  =============== //
 
 	.field-name-field-modo-de-uso, .field-name-field-modo-uso{
 		.field-label{
@@ -894,6 +905,9 @@ section.wrapperCatgFrontPage{
 		}
 	}
 
+
+	// ============  ESTUDIOS CLINICOS  =============== //
+
 	.field-name-field-estudios-clinicos{
 		.field-label{
 			display: none;
@@ -908,6 +922,9 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
+
+	// ============  IMAGEN INGREDIENNTES  =============== //
+
 	.field-name-field-imagen-ingredientes{
 		.field-label{
 			margin-bottom: 0px;
@@ -926,9 +943,6 @@ section.wrapperCatgFrontPage{
 				background-repeat: no-repeat;
 			}
 		}
-
-
-
 	
 		.field-label:before{
 			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
@@ -958,6 +972,7 @@ section.wrapperCatgFrontPage{
 
 	}
 
+	// ============  INGREDIENTES CLAVE  =============== //
 
 	.field-name-field-ingredientes-clave{
 		.field-label{
@@ -978,7 +993,6 @@ section.wrapperCatgFrontPage{
 			}
 		}
 		
-	
 		.field-label:before{
 			/*background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");*/
 		    width: 30px;
@@ -1006,6 +1020,9 @@ section.wrapperCatgFrontPage{
 		}
 
 	}
+
+
+	// ============  ACCCIONES  =============== //
 
 	.field-name-field-acciones {
 		.field-label{
@@ -1045,7 +1062,22 @@ section.wrapperCatgFrontPage{
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
+		table{
+			max-width: 80%;
+			min-width: 285px;
+			border: solid 1px #ddd;
+			margin: 20px auto;
+			tr:nth-child(1){
+				background: $grisClaro;
+				td{
+					
+				}
+			}
+		}
 	}
+
+
+	// ============  DOSIS SUGERIDA  =============== //
 
 	.field-name-field-dosis-sugerida{
 		.field-label{
@@ -1100,7 +1132,7 @@ section.wrapperCatgFrontPage{
 	}
 }
 
-	
+
 .node-type-productos { // este es cuidado personal
 		h4{
 			color: $verdemenu;
@@ -1109,17 +1141,59 @@ section.wrapperCatgFrontPage{
 		background: $verdemenu;
 		color: $blanco;
 	}
-}
-.node-type-cuidado-del-bebe{
-		h4{
-			color: $moramenu;
+	.field-name-field-indicaciones{
+		.field-label{
+			display: none;
 		}
+	}
+	.field-name-title{
+		.field-item{
+			h1{
+				color: $verdemenu;
+			}
+		}
+	}
+	.field-name-field-beneficios{
+		.field-items{
+			display: block!important;
+		}
+	}
+}
+
+.node-type-cuidado-del-bebe{
+	h4{
+		color: $moramenu;
+	}
 		
 	.field-label{
 		background: $moramenu;
 		color: $blanco;
 	}
+
+	.field-name-field-indicaciones{
+		.field-label{
+			display: none;
+		}
+	}
+	.field-name-title{
+		.field-item{
+			h2{
+				color: $moramenu;
+			}
+		}
+	}
+	.field-name-field-descripcion-corta{
+		.field-item{
+			color: $verdemenu;
+		}
+	}
+	.field-name-field-beneficios{
+		.field-items{
+			display: block!important;
+		}
+	}
 }
+
 .node-type-salud-animal{
 		h4{
 			color: $naranja;
@@ -1135,6 +1209,21 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
+	.field-name-title{
+		h2{
+			color: $naranja;
+		}
+	}
+	.field-name-field-indicaciones{
+		.field-label{
+			margin-bottom: 0;
+		}
+	}
+	.field-name-field-descripcion-corta{
+		.field-item{
+			color: $turquesa;
+		}
+	}
 }
 .node-type-salud-humana{
 		h4{
@@ -1145,6 +1234,7 @@ section.wrapperCatgFrontPage{
 		color: $blanco;
 	}
 }
+
 
 // Footer
 

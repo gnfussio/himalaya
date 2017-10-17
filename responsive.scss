@@ -4,9 +4,13 @@
 @media only screen and (min-width: 1440px) {
 	
 }
+
+
 @media only screen and (max-width: 1440px) { // Laptop L
 	
 }
+
+
 @media only screen and (max-width: 1024px) { // Laptop
 
 	section#menuPrincipal{
@@ -25,8 +29,9 @@
     		-webkit-transform: translateX(-5%)!important;
 		}
 	}
-
 }
+
+
 @media only screen and (max-width: 992px) {
 		#block-block-1{
 		figure.logo{
@@ -58,6 +63,32 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+
+	.view-eventos, .view-eventos-nicaragua {
+		.views-row{
+			@include flex-wrap(wrap);
+			border-bottom: 1px solid $grisOscuro!important;
+			.views-field{
+				margin: 8px 0;
+				text-align: center;
+			}
+		}
+		.views-field-field-fecha{
+			width: 100%!important;
+			font-size: 1.2em!Important;
+		}
+		.views-field-field-direcci-n{
+			
+		}
+		.views-field-field-lugar{
+			width: 45%!important;
+		}
+		.views-field-field-telefono{
+			width: 100%!important;
+		}
+	}
+
 	.node-type-productos, 
 	.node-type-cuidado-del-bebe, 
 	.node-type-salud-animal, 
