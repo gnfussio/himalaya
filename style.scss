@@ -618,12 +618,15 @@ section.wrapperCatgFrontPage{
 		letter-separation: 1px;
 	}
 	.field-name-field-descripcion-corta{
-		padding: 12px 0;
-		text-align: center;
-		color: $naranja;
-		line-height: 25px;
-		border-top: solid 1px $turquesa;
-		margin-top: 12px;
+		p{
+			padding: 12px 0;
+			text-align: center;
+			color: $naranja;
+			line-height: 25px;
+			border-top: solid 1px $turquesa;
+			margin-top: 12px;			
+		}
+
 	}
 	
 	// indicaciones genéricas
@@ -738,7 +741,6 @@ section.wrapperCatgFrontPage{
 
 	.field-name-field-ingredientes{
 		table{
-			font-style: italic;
 			font-size: 0.7em;
 			color: $grisOscuro;
 		}
@@ -1136,6 +1138,7 @@ section.wrapperCatgFrontPage{
 	}
 }
 
+// ===== >>> Colores que son diferentes en cada categoría
 
 .node-type-productos { // este es cuidado personal
 		h4{
@@ -1164,6 +1167,8 @@ section.wrapperCatgFrontPage{
 	}
 }
 
+// ===== >>> Cuidado del bebe
+
 .node-type-cuidado-del-bebe{
 	h4{
 		color: $moramenu;
@@ -1188,7 +1193,9 @@ section.wrapperCatgFrontPage{
 	}
 	.field-name-field-descripcion-corta{
 		.field-item{
-			color: $verdemenu;
+			p{
+				color: $verdemenu;
+			}
 		}
 	}
 	.field-name-field-beneficios{
@@ -1197,6 +1204,8 @@ section.wrapperCatgFrontPage{
 		}
 	}
 }
+
+// ===== >>> Salud animal
 
 .node-type-salud-animal{
 		h4{
@@ -1225,17 +1234,47 @@ section.wrapperCatgFrontPage{
 	}
 	.field-name-field-descripcion-corta{
 		.field-item{
-			color: $turquesa;
+			p{
+				color: $turquesa;
+			}
 		}
 	}
-}
-.node-type-salud-humana{
-		h4{
-			color: $turquesamenu;
+	.field-name-field-presentacion{
+		p{
+			text-align: center;
 		}
+	}
+	.field-name-field-dosis-sugerida{
+		.field-item{
+			table{
+				p.rtecenter{
+					text-align: center;
+				}
+			}
+		}
+
+	}
+}
+
+// ===== >>> Salud humana
+
+.node-type-salud-humana{
+	h4{
+		color: $turquesamenu;
+	}
 	.field-label{
 		background: $turquesamenu;
 		color: $blanco;
+	}
+	.field-name-field-presentacion{
+		p{
+			text-align: center;
+		}
+	}
+	.field-name-field-indicaciones{
+		.field-label{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -1267,11 +1306,9 @@ section.wrapperCatgFrontPage{
 	}
 }
 
-
 .maintenance-page{
 	background: $grisClaro;
 }
-
 
 // ****************   menus de filtrado
 
@@ -1301,9 +1338,8 @@ section.menuFiltroVista{
 					height: 12px;
 					position: absolute;
 					right: 0;
+				    top: 0;
 					content: "";
-    top: 0;
-    content: "";
 				}
 			}
 			ul.nivelDos{
@@ -1512,6 +1548,10 @@ section.menuFiltroVista{
 			li{
 				border-bottom: 1px solid $grisClaro;
 				color: $turquesa;
+				a{
+					color: $turquesa;
+					text-decoration: none;
+				}
 				.link{
 					padding: 12px 0;
 					position: relative;
@@ -1553,18 +1593,18 @@ section.menuFiltroVista{
 #node-16,
 #node-18, 
 #node-17
-{
-	.content{
-		p{
-			color: $gris;
-			line-height: 22px;
-			text-align: justify;
-		}
-		li{
-			list-style-type: disc;
+	{
+		.content{
+			p, li{
+				color: $gris;
+				line-height: 22px;
+				text-align: justify;
+			}
+			li{
+				list-style-type: disc;
+			}
 		}
 	}
-}
 
 
 

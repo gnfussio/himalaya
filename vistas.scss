@@ -59,6 +59,9 @@
 }
 
 .view-eventos, .view-eventos-nicaragua {
+	.view-content{
+		display: none;
+	}
 	.views-row{
 		padding: 16px 0px 16px 0px;
 		border-bottom: 1px $grisClaro solid;
@@ -219,7 +222,38 @@
 	}
 }
 
+/// pdfs
+// Información de veterinarios
 
+.view-informativos-veterinarios{
+	.view-content{
+		@include flexo3;
+		.views-row{
+			width: 22%;
+			margin: 14px;
+			.views-field-field-imagen-informativo{
+				img{
+					@include wyh;
+				}
+			}
+			.views-field.views-field-field-nombre-de-informativo{
+				margin: 20px;
+			    font-size: 0.8em;
+			    text-align: center;
+			    color: #999;
+			    line-height: 16px;
+			}
+			.views-field-field-informativo-veterinario{
+				text-align: center;
+				img{display: block;}
+				a{
+					color: $turquesa;
+			    	font-size: small;
+				}
+			}
+		}
+	}
+}
 
 
 

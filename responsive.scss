@@ -63,7 +63,14 @@
 }
 
 @media only screen and (max-width: 768px) {
-
+	.view-informativos-veterinarios{
+		.view-content{
+			@include flex-wrap(wrap);
+			.views-row{
+				width: 47%!important;
+			}
+		}
+	}
 
 	.view-eventos, .view-eventos-nicaragua {
 		.views-row{
