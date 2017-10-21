@@ -382,6 +382,28 @@ section#menuPrincipal{
 			display: block;
 		}
 	}
+	article:nth-child(6){
+		.subMenuBox{
+			background: $grisOscuro;
+		}
+		&:before{
+			position: absolute;
+			display: none;
+			z-index: 6;
+			content: " ";
+			top:-10px;
+			left:calc(50% - 5px);
+			top: calc(100% - 10px);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 0 10px 10px 10px;
+			border-color: transparent transparent $grisOscuro transparent;
+		}
+		&:hover::before{
+			display: block;
+		}
+	}
 }
 
 #block-system-main-menu{
@@ -598,14 +620,7 @@ section.wrapperCatgFrontPage{
 		}
 	}
 	.field-name-title{
-		
-		color: $turquesa;
-		font-weight: bolder;
-		text-align: center;
-		h2{
-			margin: 0;
-			padding: 0;
-		}
+		display: none;
 	}
 	.field-name-field-presentacion-breve{
 		.field-label{
@@ -667,17 +682,27 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			display: none;
 		}
-
-		.field-item{
-		ul li, p, {
-			color: $grisOscuro;
-			font-size: 0.95em;
-			line-height: 22px;
-			text-align: justify;
+			.field-item{
+			ul li, p, {
+				color: $grisOscuro;
+				font-size: 0.95em;
+				line-height: 22px;
+				text-align: justify;
+			}
 		}
 	}
 
+	// ============  TITULO ALTERNO  =============== //
 
+	.field-name-field-titulo-alterno{
+		.field-label{
+			display: none;
+		}
+		h1{
+			color: $turquesa;
+			font-size: 1.9em;
+			text-align: center;
+		}
 	}
 
 	// ============  BENEFICIOS  =============== //
@@ -1136,7 +1161,26 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
+
+	// ============  INFORMATIVOS VETERINARIOS  =============== //
+
+	.field-name-field-informativos-veterianrios{
+		margin-top: 20px;
+		.field-label{
+			display: none;
+		}
+		.field-item{
+			text-align: center;
+			a{
+				background: #005d62;
+			    color: #FFF;
+			    padding: 10px;
+			    display: block;
+			}
+		}
+	}
 }
+
 
 // ===== >>> Colores que son diferentes en cada categoría
 
@@ -1153,10 +1197,16 @@ section.wrapperCatgFrontPage{
 			display: none;
 		}
 	}
+	.field-name-field-titulo-alterno {
+		display: none;
+	}
 	.field-name-title{
+		display: block;
+		text-align: center;
 		.field-item{
 			h1{
 				color: $verdemenu;
+				font-size: 1.9em;
 			}
 		}
 	}
@@ -1173,21 +1223,25 @@ section.wrapperCatgFrontPage{
 	h4{
 		color: $moramenu;
 	}
-		
 	.field-label{
 		background: $moramenu;
 		color: $blanco;
 	}
-
 	.field-name-field-indicaciones{
 		.field-label{
 			display: none;
 		}
 	}
+	.field-name-field-titulo-alterno {
+		display: none;
+	}
 	.field-name-title{
+		display: block;
+		text-align: center;
 		.field-item{
 			h2{
 				color: $moramenu;
+				font-size: 1.9em;
 			}
 		}
 	}
@@ -1222,9 +1276,14 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
-	.field-name-title{
-		h2{
+	.field-name-field-titulo-animal{
+		.field-label{
+			display: none;
+		}
+		h1{
 			color: $naranja;
+			text-align: center;
+			font-size: 1.9em;
 		}
 	}
 	.field-name-field-indicaciones{
@@ -1428,6 +1487,7 @@ section.menuFiltroVista{
 			p{
 				font-size: 14px;
 			    line-height: 24px;
+			    color: $turquesa;
 			}
 		}
 	}

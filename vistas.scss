@@ -21,8 +21,8 @@
 					}
 				}
 			}
-			.views-field-title{
-				a{
+			.views-field-title, .views-field-field-titulo-animal, .views-field-field-titulo-alterno{
+				a, h1{
 					font-weight: bolder;
 					color: $gris;
 					text-decoration: none;
@@ -225,11 +225,13 @@
 /// pdfs
 // Información de veterinarios
 
-.view-informativos-veterinarios{
+.view-informativos-veterinarios, .infoVet{
 	.view-content{
-		@include flexo3;
+		@include flexo2;
+		@include flex-wrap(wrap);
 		.views-row{
-			width: 22%;
+			width: 21.5%;
+			min-width: 210px;
 			margin: 14px;
 			.views-field-field-imagen-informativo{
 				img{
@@ -245,10 +247,22 @@
 			}
 			.views-field-field-informativo-veterinario{
 				text-align: center;
-				img{display: block;}
-				a{
-					color: $turquesa;
-			    	font-size: small;
+				.file{
+					img{
+						display: none;
+					}
+					a{
+						background: $turquesa;
+						color: $blanco;
+						padding: 7px 10px;
+						text-decoration: none;
+						font-size: 12px;
+						@include border-radius(4px);
+						@include transicion(300ms);
+						&:hover{
+							background: $naranja;
+						}
+					}
 				}
 			}
 		}
