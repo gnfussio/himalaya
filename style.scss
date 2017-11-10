@@ -93,7 +93,7 @@ strong, * strong{
 					height: 34px;
 					border:none;
 					margin-left: -5px;
-					background-image: url(/himalaya/sites/default/files/lupa.png);
+					background-image: url(/sites/default/files/lupa.png);
 					background-repeat: no-repeat;
 					background-size: 25px 25px;
     				background-position: 4px;
@@ -115,6 +115,13 @@ strong, * strong{
 #header-top-inside{
 	    margin-bottom: 15px;
 	    margin-top: 15px;
+}
+#content-wrapper{
+	> h1{
+		sup{
+			font-size: 0.7em;
+		}
+	}
 }
 
 
@@ -384,7 +391,7 @@ section#menuPrincipal{
 	}
 	article:nth-child(6){
 		.subMenuBox{
-			background: $grisOscuro;
+			background: $grismedio;
 		}
 		&:before{
 			position: absolute;
@@ -398,10 +405,20 @@ section#menuPrincipal{
 			height: 0;
 			border-style: solid;
 			border-width: 0 10px 10px 10px;
-			border-color: transparent transparent $grisOscuro transparent;
+			border-color: transparent transparent $grismedio transparent;
 		}
 		&:hover::before{
 			display: block;
+		}
+	}
+	article:nth-child(7){
+		.item{
+			border-right: solid 1px #999;
+		}
+	}
+	article:nth-child(8){
+		.item{
+			border-left: none;
 		}
 	}
 }
@@ -714,7 +731,7 @@ section.wrapperCatgFrontPage{
 			&:after{
 				
 				background-repeat: no-repeat;
-				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
+				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -741,7 +758,7 @@ section.wrapperCatgFrontPage{
 			}
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_beneficios.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_beneficios.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -775,7 +792,7 @@ section.wrapperCatgFrontPage{
 			margin-bottom: 0px;
 			padding: 8px 0 8px 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background: url("/sites/default/files/flecha_abajo_blanca.png");
 				background-repeat: no-repeat;
 				content: "";
 			    width: 19px;
@@ -804,7 +821,7 @@ section.wrapperCatgFrontPage{
 			}
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -824,7 +841,7 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background: url("/sites/default/files/flecha_abajo_blanca.png");
 				background-repeat: no-repeat;
 				content: "";
 			    width: 19px;
@@ -846,7 +863,7 @@ section.wrapperCatgFrontPage{
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_info.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_info.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -891,7 +908,7 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background: url("/sites/default/files/flecha_abajo_blanca.png");
 				background-repeat: no-repeat;
 				content: "";
 			    width: 19px;
@@ -913,7 +930,7 @@ section.wrapperCatgFrontPage{
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_modo_uso.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_modo_uso.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -960,7 +977,7 @@ section.wrapperCatgFrontPage{
 			&:after{
 				
 				background-repeat: no-repeat;
-				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
+				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -975,7 +992,7 @@ section.wrapperCatgFrontPage{
 		}
 	
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -1010,7 +1027,7 @@ section.wrapperCatgFrontPage{
 			&:after{
 				
 				background-repeat: no-repeat;
-				/*background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");*/
+				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
 			    width: 19px;
 			    height: 17px;
@@ -1025,7 +1042,7 @@ section.wrapperCatgFrontPage{
 		}
 		
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_ingredientes.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -1060,7 +1077,7 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background: url("/sites/default/files/flecha_abajo_blanca.png");
 				background-repeat: no-repeat;
 				content: "";
 			    width: 19px;
@@ -1082,7 +1099,7 @@ section.wrapperCatgFrontPage{
 			padding: 20px 12px 12px 12px;
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_acciones.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_acciones.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -1115,7 +1132,7 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0px;
 			&:after{
-				background: url("/himalaya/sites/default/files/flecha_abajo_blanca.png");
+				background: url("/sites/default/files/flecha_abajo_blanca.png");
 				background-repeat: no-repeat;
 				content: "";
 			    width: 19px;
@@ -1130,7 +1147,7 @@ section.wrapperCatgFrontPage{
 			}
 		}
 		.field-label:before{
-			background-image: url("/himalaya/sites/default/files/iconoshimalaya/icon_dosis.png");
+			background-image: url("/sites/default/files/iconoshimalaya/icon_dosis.png");
 		    width: 30px;
 		    height: 35px;
 		    position: absolute;
@@ -1197,7 +1214,7 @@ section.wrapperCatgFrontPage{
 			display: none;
 		}
 	}
-	.field-name-field-titulo-alterno {
+	.ofield-name-field-titulo-altern {
 		display: none;
 	}
 	.field-name-title{
@@ -1312,16 +1329,15 @@ section.wrapperCatgFrontPage{
 			}
 		}
 	}
-	.field-name-field-ingredientes{
+	.field-name-field-titulo-alterno{
 		.field-item{
-			p{
-				em{
-					font-size: 0.8em;
+			h1{
+				sup{
+					font-size: 0.6em;
 				}
 			}
 		}
 	}
-
 }
 
 // ===== >>> Salud humana
@@ -1344,11 +1360,11 @@ section.wrapperCatgFrontPage{
 			margin-bottom: 0;
 		}
 	}
-	.field-name-field-ingredientes{
+	.field-name-field-titulo-alterno{
 		.field-item{
-			p{
-				em{
-					font-size: 0.8em;
+			h1{
+				sup{
+					font-size: 0.6em;
 				}
 			}
 		}
@@ -1409,7 +1425,7 @@ section.menuFiltroVista{
 					color: $turquesa;
 				}
 				&:after{
-					background-image: url("/himalaya/sites/default/files/flecha_abajo.png");
+					background-image: url("/sites/default/files/flecha_abajo.png");
 					background-repeat: no-repeat;
 					width: 19px;
 					height: 12px;
@@ -1483,7 +1499,7 @@ section.menuFiltroVista{
 					color: lighten($turquesa, 10%);
 				}
     			&:after{
-				    background: url(/himalaya/sites/default/files/flecha_abajo.png);
+				    background: url(/sites/default/files/flecha_abajo.png);
 				    background-repeat: no-repeat;
 				    content: "";
 				    width: 19px;
@@ -1636,7 +1652,7 @@ section.menuFiltroVista{
 				}
 				.toggle{
 					&:after{
-					    background: url(/himalaya/sites/default/files/flecha_abajo.png);
+					    background: url(/sites/default/files/flecha_abajo.png);
 					    background-repeat: no-repeat;
 					    content: "";
 					    width: 19px;
@@ -1668,7 +1684,7 @@ section.menuFiltroVista{
 
 // página de laboratorio
 
-#node-16,
+#node-16, 
 #node-18, 
 #node-17
 	{
@@ -1685,6 +1701,8 @@ section.menuFiltroVista{
 	}
 
 
-
+body{
+	display:inherit!important;
+}
 
 

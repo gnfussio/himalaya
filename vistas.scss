@@ -88,6 +88,9 @@
 	}
 	.views-field-field-direcci-n{
 		width: 45%;
+		.field-content{
+			text-transform: inherit!important;
+		}
 	}
 	.views-field-field-lugar{
 		width: 25%;
@@ -113,11 +116,13 @@
 	margin: 20px 0;
 	.content{
 		text-align: center;
-		text-transform: uppercase;
 		h2{
 			font-weight: 300;
 			font-weight: lighter;
 		}
+	}
+	.views-field-field-fecha, .views-field-field-lugar, .views-field-field-telefono{
+		text-transform: uppercase;
 	}
 	.wrapProvinciasEventos, .wrapEventosNica{
 		@include flexo3;
@@ -127,6 +132,7 @@
 			padding: 12px;
 			box-sizing: border-box;
 			border-bottom: 2px solid $blanco;
+			text-transform: uppercase;
 		}
 	}
 	.wrapProvinciasEventos{
