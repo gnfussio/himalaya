@@ -3,10 +3,11 @@
 
 // salud humana
 
-.view-salud-humana, 
-.view-cuidado-bebe, 
-.view-cuidado-personal, 
-.view-salud-animal {
+.view-salud-humana,
+.view-cuidado-bebe,
+.view-cuidado-personal,
+.view-salud-animal,
+.view-destacados {
 	.view-content{
 			@include flexo2;
 			@include flex-wrap(wrap);
@@ -43,12 +44,29 @@
 				font-size: 0.75em;
 			}
 			.views-field-field-categoria{
-				font-size: 0.7em;	
+				font-size: 0.7em;
 			}
 		}
 	}
 }
 
+// destacados
+#block-views-destacados-block{
+	margin-top: 30px;
+	h2{
+		text-align: center;
+	}
+}
+.view-destacados{
+	.view-content{
+		@include flexo2;
+		@include flex-wrap(wrap);
+		.views-row{
+			width: 18%;
+			min-width: 120px;
+		}
+	}
+}
 
 //  *************  página de Eventos
 
@@ -61,6 +79,11 @@
 .view-eventos, .view-eventos-nicaragua {
 	.view-content{
 		display: none;
+		h3{
+			text-transform: uppercase;
+			color: $gris;
+			text-align: center;
+		}
 	}
 	.views-row{
 		padding: 16px 0px 16px 0px;
@@ -72,10 +95,10 @@
 					font-size: 0.85em;
 			}
 		}
-		.views-field-title, 
-		.views-field-field-pais, 
-		.views-field-field-provincias-cr, 
-		.views-field-field-provincias-nica { 
+		.views-field-title,
+		.views-field-field-pais,
+		.views-field-field-provincias-cr,
+		.views-field-field-provincias-nica {
 			display: none;
 		}
 	}
@@ -112,6 +135,12 @@
 #block-block-16 {
 	color: $naranja;
 }
+.lineaBottom{
+	border-bottom: 2px solid $turquesa!important;
+}
+.lineaBottomN{
+	border-bottom: 2px solid $naranja!important;
+}
 #block-block-15, #block-block-16{
 	margin: 20px 0;
 	.content{
@@ -141,7 +170,7 @@
 				border-bottom: 2px solid $turquesa;
 			}
 		}
-	} 
+	}
 	.wrapEventosNica{
 		.provincia{
 			&:hover{
@@ -193,7 +222,7 @@
 		}
 		.lado-izquierdo{
 			width: 24%;
-			.views-field-field-edad, 
+			.views-field-field-edad,
 			.views-field-field-nombre{
 				color: $turquesa;
 				font-size: 1.2em;
@@ -274,8 +303,3 @@
 		}
 	}
 }
-
-
-
-
-

@@ -10,14 +10,14 @@ body{
 }
 
 /*Heading*/
-h1, h2, h3, h4, h5, h6, a, p, div { 
+h1, h2, h3, h4, h5, h6, a, p, div {
 		font-family: $tipo;
 	}
-h1, h2, h3, h4, h5, h6 { 
-	font-weight: 700; 
-	line-height: 120%; 
-	padding: 0; 
-	margin: 20px 0 10px 0; 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	line-height: 120%;
+	padding: 0;
+	margin: 20px 0 10px 0;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #444; }
@@ -36,7 +36,6 @@ strong, * strong{
 }
 
 * i, * em{
-	
 	font-style:italic
 }
 
@@ -99,10 +98,9 @@ strong, * strong{
     				background-position: 4px;
 				}
 			}
-
 		}
 		#block-block-6{ // block de las redes sociales
-			width:150px;
+			width:250px;
 		}
 	}
 }
@@ -125,7 +123,7 @@ strong, * strong{
 }
 
 
-.region.region-banner { 
+.region.region-banner {
 	margin-bottom: 25px;
 }
 
@@ -152,11 +150,25 @@ strong, * strong{
 	}
 }
 
-
 // =-=-=-=-=-=-=-  Redes Sociales
 
-.redesSocialesTop{
+.redesSocialesTop, .redesSocialesMobil{
 	text-align: center;
+	a{
+		width: 50px;
+		height: 48px;
+		overflow: hidden;
+		display: inline-block;
+		margin-left: 5px;
+		img{
+			@include transicion(300ms);
+		}
+		&:hover{
+			img{
+				margin-top: -48px;
+			}
+		}
+	}
 	article{
 		display: inline-block;
     	padding: 0 12px;
@@ -175,6 +187,10 @@ strong, * strong{
 	article:nth-child(1){
 		border-right: solid 1px darkcyan;
 	}
+}
+
+.redesSocialesMobil{
+	display: none;
 }
 
 // menu principal
@@ -235,12 +251,12 @@ section#menuPrincipal{
 
 							}
 						}
-					}					
+					}
 				}
 		}
 		ul{
 			li{
-				
+
 				h3, a{
 					color: $blanco;
 				}
@@ -433,7 +449,7 @@ section#menuPrincipal{
 				text-transform: uppercase;
 				color: $turquesa;
 				a:hover{
-					
+
 				}
 			}
 		}
@@ -450,12 +466,18 @@ section#menuPrincipal{
 				font-size: 0.7em;
 				color: $grisOscuro;
 				a{
-				color: $turquesa;	
+				  color: $turquesa;
 				}
 			}
 		}
 	}
 }
+
+// slider para movil
+#block-block-35{
+  display: none;
+}
+
 
 .front{
 	.page-title{
@@ -581,9 +603,9 @@ section.wrapperCatgFrontPage{
 
 // detalle de productos
 
-.node-type-productos, 
-.node-type-cuidado-del-bebe, 
-.node-type-salud-animal, 
+.node-type-productos,
+.node-type-cuidado-del-bebe,
+.node-type-salud-animal,
 .node-type-salud-humana {
 	.node{
 		margin-top: 30px;
@@ -600,7 +622,7 @@ section.wrapperCatgFrontPage{
 		margin-bottom: 20px;
 		position: relative;
 	}
-	.field-item{ 
+	.field-item{
 		ul{
 			li{
 				list-style-type: disc;
@@ -656,20 +678,19 @@ section.wrapperCatgFrontPage{
 			color: $naranja;
 			line-height: 25px;
 			border-top: solid 1px $turquesa;
-			margin-top: 12px;			
+			margin-top: 12px;
 		}
-
 	}
-	
+
 	// indicaciones genéricas
 
-	.field-name-field-indicaciones, 
-	.field-name-field-acciones, 
-	.field-name-field-dosis-sugerida, 
-	.field-name-field-informacion-adicional, 
-	.field-name-field-presentacion, 
-	.field-name-field-beneficios, 
-	.field-name-field-imagen-ingredientes, 
+	.field-name-field-indicaciones,
+	.field-name-field-acciones,
+	.field-name-field-dosis-sugerida,
+	.field-name-field-informacion-adicional,
+	.field-name-field-presentacion,
+	.field-name-field-beneficios,
+	.field-name-field-imagen-ingredientes,
 	.field-name-field-ingredientes,
 	.field-name-field-ingredientes-clave {
 		margin-bottom: 20px;
@@ -729,7 +750,7 @@ section.wrapperCatgFrontPage{
 			cursor: pointer;
 			margin-bottom: 0px;
 			&:after{
-				
+
 				background-repeat: no-repeat;
 				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
@@ -754,7 +775,7 @@ section.wrapperCatgFrontPage{
 			h5{
 				color:$naranja;
 				font-size: 1em;
-									
+
 			}
 		}
 		.field-label:before{
@@ -769,11 +790,11 @@ section.wrapperCatgFrontPage{
 		    background-size: 85%;
     		background-repeat: no-repeat;
 		}
-		.field-item{	
+		.field-item{
 			h2{
 				color: $moramenu;
 				p{
-					
+
 				}
 			}
 		}
@@ -941,11 +962,11 @@ section.wrapperCatgFrontPage{
 		    background-size: 85%;
     		background-repeat: no-repeat;
     	}
-		.field-item{	
+		.field-item{
 			h2{
 				color: $turquesa;
 				p{
-					
+
 				}
 			}
 		}
@@ -975,7 +996,7 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			margin-bottom: 0px;
 			&:after{
-				
+
 				background-repeat: no-repeat;
 				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
@@ -990,7 +1011,7 @@ section.wrapperCatgFrontPage{
 				background-repeat: no-repeat;
 			}
 		}
-	
+
 		.field-label:before{
 			background-image: url("/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
@@ -1025,7 +1046,7 @@ section.wrapperCatgFrontPage{
 		.field-label{
 			margin-bottom: 0px;
 			&:after{
-				
+
 				background-repeat: no-repeat;
 				/*background: url("/sites/default/files/flecha_abajo_blanca.png");*/
 				content: "";
@@ -1040,7 +1061,7 @@ section.wrapperCatgFrontPage{
 				background-repeat: no-repeat;
 			}
 		}
-		
+
 		.field-label:before{
 			background-image: url("/sites/default/files/iconoshimalaya/icon_ingredientes.png");
 		    width: 30px;
@@ -1118,7 +1139,7 @@ section.wrapperCatgFrontPage{
 			tr:nth-child(1){
 				background: $grisClaro;
 				td{
-					
+
 				}
 			}
 		}
@@ -1173,7 +1194,7 @@ section.wrapperCatgFrontPage{
 			tr:nth-child(1){
 				background: $grisClaro;
 				td{
-					
+
 				}
 			}
 		}
@@ -1415,7 +1436,7 @@ section.menuFiltroVista{
 		li{
 			padding: 7px 0;
 			cursor: pointer;
-			
+
 			> div{
 				text-transform: uppercase;
 				color: darken($gris, 10%);
@@ -1528,24 +1549,91 @@ section.menuFiltroVista{
 
 	h2:nth-of-type(1){
 		color: $turquesa;
-		
+
 	}
 	h2:nth-of-type(2){
 		color: $naranja;
-		
+
 	}
 	h2:nth-of-type(3){
 		color: $verdemenu;
-		
-		
+
+
 	}
 	h2:nth-of-type(4){
 		color: $moramenu;
-		
-		
+
+
 	}
 
 
+// Página Mision Visión
+
+.wrapMisionVision, .wrapValores{
+	h2{
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.wrapMisionVision{
+	@include flexo2;
+	@include flex-wrap(wrap);
+	article{
+		min-width: 250px;
+		width: 30%;
+		margin: 0 12px;
+		h2{
+			text-align: center;
+			color: $turquesa
+		}
+		p{
+			color: $gris;
+			text-align: justify;
+		}
+	}
+	article:nth-child(2){
+		h2{
+			color: $naranja;
+		}
+	}
+}
+
+.wrapValores{
+	margin-top: 30px;
+	h2{
+		color: $turquesa;
+	}
+	.wrapIcons{
+		@include flexo3;
+		@include flex-wrap(wrap);
+		figure{
+			text-align: center;
+			min-width: 200px;
+			width: 22%;
+			margin: 0 10px;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+}
+
+// Página Mision Visión
+
+.wrapLab{
+	margin-bottom: 40px;
+	display: inline-block;
+	width: 100%;
+	p{
+		color: $gris;
+	}
+	figure{
+		img{
+			width: 100%;
+		}
+	}
+}
 
 // Página de contáctenos
 
@@ -1562,7 +1650,7 @@ section.menuFiltroVista{
 					width: 47%;
 				}
 				> aside{
-					margin-right: 5%; 
+					margin-right: 5%;
 				}
 				section{
 					.form-actions{
@@ -1611,7 +1699,7 @@ section.menuFiltroVista{
 			.titulo{
 				background: $naranja;
 			}
-		}		
+		}
 	}
 
 	.mapa{
@@ -1638,7 +1726,6 @@ section.menuFiltroVista{
 		text-transform: uppercase;
 		ul li div{ padding: 12px 0; }
 		ul.nivelUno{
-			display: none;
 			li{
 				border-bottom: 1px solid $grisClaro;
 				color: $turquesa;
@@ -1663,7 +1750,7 @@ section.menuFiltroVista{
 					    top: 10px;
 					    background-size: 85%;
 					    background-repeat: no-repeat;
-					}					
+					}
 				}
 				ul.nivelDos{
 					display: none;
@@ -1684,8 +1771,8 @@ section.menuFiltroVista{
 
 // página de laboratorio
 
-#node-16, 
-#node-18, 
+#node-16,
+#node-18,
 #node-17
 	{
 		.content{
@@ -1704,5 +1791,3 @@ section.menuFiltroVista{
 body{
 	display:inherit!important;
 }
-
-

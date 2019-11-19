@@ -2,12 +2,12 @@
 
 
 @media only screen and (min-width: 1440px) {
-	
+
 }
 
 
 @media only screen and (max-width: 1440px) { // Laptop L
-	
+
 }
 
 
@@ -39,14 +39,14 @@
 				display: block!Important;
 				text-align: center!Important;
 				img{
-					
+
 				}
 			}
 		}
 	}
-	.view-salud-humana, 
-	.view-cuidado-bebe, 
-	.view-cuidado-personal, 
+	.view-salud-humana,
+	.view-cuidado-bebe,
+	.view-cuidado-personal,
 	.view-salud-animal{
 		.view-content{
 			.views-row{
@@ -62,7 +62,26 @@
 	}
 }
 
+@media only screen and (min-width: 769x) {
+	#block-block-26{
+		nav.menuMobli{
+			ul.nivelUno{
+				display: none;
+			}
+		}
+	}
+}
+
 @media only screen and (max-width: 768px) {
+
+	#block-block-26{
+		nav.menuMobli{
+			ul.nivelUno{
+				display: block;
+			}
+		}
+	}
+
 	.view-informativos-veterinarios{
 		.view-content{
 			@include flex-wrap(wrap);
@@ -86,7 +105,7 @@
 			font-size: 1.2em!Important;
 		}
 		.views-field-field-direcci-n{
-			
+
 		}
 		.views-field-field-lugar{
 			width: 45%!important;
@@ -96,9 +115,9 @@
 		}
 	}
 
-	.node-type-productos, 
-	.node-type-cuidado-del-bebe, 
-	.node-type-salud-animal, 
+	.node-type-productos,
+	.node-type-cuidado-del-bebe,
+	.node-type-salud-animal,
 	.node-type-salud-humana {
 		.col-sm-5{
 			> .field{
@@ -169,7 +188,7 @@
 						width: 100%!important;
 					}
 					> aside{
-						margin-right: 0%!important; 
+						margin-right: 0%!important;
 					}
 				}
 			}
@@ -180,8 +199,8 @@
 			width: 48%!important;
 			.hidenBox{
 				.texto{
-					strong, span { 
-						font-size: 0.75em!important; 
+					strong, span {
+						font-size: 0.75em!important;
 						}
 					}
 				}
@@ -195,21 +214,54 @@
 			}
 			.lado-izquierdo{
 				width: 24%;
-				.views-field-field-edad, 
+				.views-field-field-edad,
 				.views-field-field-nombre{
 				}
 				.views-field-field-nombre{
 				}
 			}
 			.lado-derecho{
-					
+
 			}
 		}
 	}
-	
+	// seccion laboratorio
+	.wrapLab{
+		figure{
+			img{
+				max-width: 100%!important;
+				margin: 0!important;
+			}
+		}
+	}
+	.menuFiltroVista{
+		.nivelUno{
+			li{
+				div{
+					font-size: 12px!important;
+    				line-height: 16px!important;
+					&:after{
+					    width: 12px!important;
+					    height: 12px!important;
+					    top: -2px!important;
+					    background-size: 100%!important;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 480px){
+
+// sliders movil & desktop
+	#block-block-35{
+	  display: block!important;
+	}
+	#block-block-2{
+		display: none!important;
+	}
+
 	#top{
 		#header-top{
 			.container{
@@ -233,31 +285,34 @@
 			.hidenBox{
 				.texto{
 					strong, span { font-size: 1.2em!important }
-					} 
-				} 
+					}
+				}
 			}
-		}  
+		}
 
-	.view-salud-humana, 
-	.view-cuidado-bebe, 
-	.view-cuidado-personal, 
+	.view-salud-humana,
+	.view-cuidado-bebe,
+	.view-cuidado-personal,
 	.view-salud-animal{
 		.view-content{
 			.views-row{
-				width: 100%!Important;
+				width: 100%!important;
 			}
 		}
+	}
+
+	// redes sociales
+
+	.redesSocialesTop{
+		display: none!important;
+	}
+
+	.redesSocialesMobil{
+		display: inherit!important;
 	}
 
 }
 
 @media only screen and (max-width: 320px) {
-	
+
 }
-
-
-
-
-
-
-
