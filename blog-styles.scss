@@ -1,0 +1,354 @@
+
+
+@import "compass/css3";
+
+$blanco:#fff;
+$verde: #005d62;
+$verdeclaro: #88c380;
+$grisclaro: #e8e8e8;
+$negro: #000;
+
+.wrapBlogCategorias{
+	@include display-flex(flex);
+	@include flex-wrap(wrap);
+	@include justify-content(center);
+	 .item{
+		width: 20%;
+		margin: 12px;
+		h3{
+			text-transform: uppercase;
+			text-align: center;
+			margin: 12px 0;
+			color: $verde;
+			font-weight: 300;
+    		font-size: 1em;
+		}
+	}
+}
+// **********
+// views
+// **********
+#block-views-blog-destacados-block-1
+ {
+	h2{
+		text-align: center;
+	}
+}
+.page-taxonomy{
+	h1{
+		text-align: center;
+	}
+}
+.view-blog-destacados, .view-taxonomy-term{
+	.view-content{
+		@include display-flex(flex);
+		@include justify-content(center);
+		@include align-items(start);
+		@include flex-wrap(wrap);
+		.views-row{
+			width: 30%;
+			margin: 20px 12px;
+		}
+		.views-field-title{
+			margin-top: 38px;
+			span{
+				display: block;
+				display:block;
+				padding: 12px 0;
+				a{
+					color: $negro;
+					font-size: 0.9em;
+					&:hover{
+						text-decoration:none;
+						color: $verde;
+					}
+				}
+			}
+		}
+		.views-field-field-foto-blog{
+			img{
+				width:100%;
+				height: auto;
+			}
+		}
+		.views-field-field-fecha-blog, 
+		.views-field-field-tiempo-de-lectura{
+			background: $grisclaro;
+			display: inline-block;
+			float:left;
+			width:50%;
+			padding: 12px;
+			.field-content{
+				color: $verde;
+				font-size: 0.8em;
+				font-weight: 700;
+			}
+		}
+		.views-field-field-tiempo-de-lectura{
+			.field-content{
+				position: relative;
+				margin-left: 20px;
+				&:before{
+					content:'';
+					background: url('/sites/default/files/blog/tiempo.png');
+					background-size: 20px 20px;
+					background-repeat: no-repeat;
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					top: -5px;
+					left: -24px;
+				}
+			}
+		}
+		.views-field-field-fecha-blog{
+			.field-content{
+				position: relative;
+				float:right;
+				&:before{
+					content:'';
+					background: url('/sites/default/files/blog/calendario.png');
+					background-size: 20px 20px;
+					background-repeat: no-repeat;
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					top: -5px;
+					left: -24px;
+				}
+			}
+		}
+	}
+}
+
+.page-node-1822{
+	h1{
+		text-align: center;
+	}
+}
+
+#block-block-37{
+	position: relative;
+	h2, h3{
+		color: $verde;
+	}
+	.titulares{
+		position: absolute;
+		top:0;
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+	}
+}
+
+.node-type-blog{
+	.page-title{
+		display: none;
+	}
+}
+
+.node-blog{
+	.content{
+		width: 100%;
+		max-width: 750px;
+		margin: 0 auto;
+		p{
+			margin:12px 0;
+			color: $verde;
+			line-height: 22px;
+		}
+		ul li{
+			margin-left: 20px;
+			list-style: disc;
+			color: $verde;
+			line-height: 22px;
+		}
+
+		.field-name-field-foto-blog{
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+.field-name-field-fecha-blog, 
+.field-name-field-tiempo-de-lectura, 
+.links.inline a{
+	display: none;
+}
+
+.field-name-field-categor-a{
+	margin-bottom: 14px;
+	a{
+		padding: 6px 10px;
+		color:$blanco;
+		background: $verdeclaro;
+		display: inline-block;
+	}
+}
+
+// titulares blogs posts
+
+#block-block-38{
+	background: $verdeclaro;
+	h1.titublog{
+		color:$blanco;
+		text-align: center;
+		padding: 20px 20px 24px 20px;
+	}
+}
+
+// ************  //
+// front page
+// ************  //
+
+
+#block-views-blog-block-1{
+	background: $verde;
+	padding: 30px 0;
+	h2{
+		color:$blanco;
+		text-align: center;
+	}
+	.view-content{
+		@include display-flex(flex);
+		@include flex-wrap(wrap);
+		@include justify-content(center);
+		max-width: 710px;
+		margin:0 auto;
+		.views-row{
+			width: 200px;
+			margin: 12px;
+		}
+	}
+	.views-field-field-foto-blog{
+		a{
+			display: block;
+		    overflow: hidden;
+		    border-radius: 100px;
+		    width: 200px;
+		    height: 200px;
+		    font-size: 14px;
+			img{
+				width: auto;
+    			height: 200px;
+    			margin-left: -180px;
+    			&:hover{
+    				opacity:0.7;
+    			}
+			}
+		}
+	}
+	.views-field-title{
+		text-align: center;
+    	margin: 12px 0;
+		a{
+			color: $blanco;
+			font-size: 0.8em;
+			line-height: 16px;
+			&:hover{
+				color:$verdeclaro;
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+.view-destacados{
+	max-width: 900px;
+	margin:0 auto;
+}
+
+.feed-icon{
+	display: none;
+}
+
+.menuMobli{
+	background: $blanco;
+}
+
+.page-node-1822{
+	.page-title{
+		font-size: 30px;
+		color: $verde;
+	}
+}
+
+
+// *********	RESPOSIVE CSS   **********  //
+
+
+@media only screen and (min-width: 1440px) {
+	
+}
+@media only screen and (max-width: 1440px) { // Laptop L
+	
+}
+@media only screen and (max-width: 1024px) { // Laptop
+	
+}
+@media only screen and (max-width: 992px) {
+	.wrapBlogCategorias{
+	 	.item{
+	 		min-width: 220px;
+			figure{
+				text-align: center;
+			}
+	 	}
+	 }
+}
+@media only screen and (max-width: 768px) {
+	
+}
+
+@media only screen and (max-width: 480px){
+ .wrapBlogCategorias{
+ 	.item{
+ 		min-width: 280px;
+		figure{
+			text-align: center;
+		}
+ 	}
+ }
+ #block-block-37{
+ 	overflow: hidden;
+ 	.textoTop{
+ 		h2{
+ 			font-size: 24px!important;
+ 		}
+ 		img{
+		min-height: 200px;
+    width: auto!important;
+    margin: 0 auto!important;
+ 		}
+ 	}
+ }
+
+ .view-blog-destacados, .view-taxonomy-term{
+ 	.view-content{
+ 		.views-row{
+ 			min-width: 280px;
+ 			margin: 0 auto 20px auto!important;
+ 		}
+ 	}
+ }
+ #block-views-blog-block-1{
+ 	 .view-id-blog{
+	 	.view-content{
+	 		.views-row{
+	 			margin: 0 auto!important;
+	 		}
+	 	}
+	 }
+ }
+
+
+}
+
+@media only screen and (max-width: 320px){
+
+}
+
+
